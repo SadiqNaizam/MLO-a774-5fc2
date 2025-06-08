@@ -4,89 +4,90 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Palette - Light Mode */
+    --background: 0 0% 100%; /* White */
+    --foreground: 215 28% 27%; /* Dark Gray (#374151) */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 220 14% 96%; /* Light Gray (#F3F4F6) */
+    --card-foreground: 215 28% 27%; /* Dark Gray (#374151) */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 215 28% 27%; /* Dark Gray (#374151) */
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 221 83% 53%; /* Deep Blue (#2563EB) */
+    --primary-foreground: 210 40% 98%; /* Whiteish */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 220 14% 96%; /* Light Gray (#F3F4F6) */
+    --secondary-foreground: 221 83% 53%; /* Primary Blue */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 14% 96%; /* Light Gray (#F3F4F6) */
+    --muted-foreground: 215 14% 65%; /* Medium Gray (#9CA3AF) */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 160 82% 42%; /* Vibrant Teal/Green (#10B981) */
+    --accent-foreground: 160 30% 15%; /* Dark Teal/Green (for text on accent) */
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 13% 88%; /* Subtle Gray Border */
+    --input: 220 13% 88%; /* Subtle Gray Input Border */
+    --ring: 160 82% 42%; /* Accent Teal/Green for focus ring */
 
-    --radius: 0.5rem;
+    --radius: 0.375rem; /* 6px */
 
-    --sidebar-background: 0 0% 98%;
+    /* Typography */
+    --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar Colors - Light Mode */
+    --sidebar-background: 220 20% 97%; /* Slightly off-white/light gray */
+    --sidebar-foreground: 215 28% 27%; /* Main foreground */
+    --sidebar-primary: 221 83% 53%; /* Main primary blue */
+    --sidebar-primary-foreground: 210 40% 98%; /* Whiteish */
+    --sidebar-accent: 160 82% 42%; /* Main accent teal/green */
+    --sidebar-accent-foreground: 160 30% 15%; /* Dark Teal/Green */
+    --sidebar-border: 220 13% 88%; /* Main border color */
+    --sidebar-ring: 160 82% 42%; /* Main accent for ring */
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    /* Core Palette - Dark Mode */
+    --background: 222 47% 11%; /* Near-black (#111827) */
+    --foreground: 210 40% 98%; /* Whiteish */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 215 39% 17%; /* Dark Gray (#1F2937) */
+    --card-foreground: 210 40% 98%; /* Whiteish */
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 215 39% 17%; /* Dark Gray (#1F2937) */
+    --popover-foreground: 210 40% 98%; /* Whiteish */
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 221 83% 65%; /* Lighter Blue for Dark Mode */
+    --primary-foreground: 222 47% 15%; /* Darker text for contrast */
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 215 28% 27%; /* Medium-Dark Gray (#374151) */
+    --secondary-foreground: 210 40% 98%; /* Whiteish */
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 215 28% 27%; /* Medium-Dark Gray (#374151) */
+    --muted-foreground: 215 15% 55%; /* Lighter Medium Gray */
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 160 70% 60%; /* Lighter Teal/Green for Dark Mode */
+    --accent-foreground: 160 30% 15%; /* Dark Teal/Green (for text on accent) */
 
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 0 70% 50%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 215 28% 27%; /* Medium-Dark Gray (#374151) */
+    --input: 215 28% 27%; /* Medium-Dark Gray (#374151) */
+    --ring: 160 70% 60%; /* Accent Teal/Green for focus ring (Dark Mode) */
+
+    /* Sidebar Colors - Dark Mode */
+    --sidebar-background: 222 40% 14%; /* Slightly lighter than main dark BG */
+    --sidebar-foreground: 210 40% 98%; /* Main dark foreground */
+    --sidebar-primary: 221 83% 65%; /* Dark mode primary blue */
+    --sidebar-primary-foreground: 222 47% 15%; /* Dark text */
+    --sidebar-accent: 160 70% 60%; /* Dark mode accent teal/green */
+    --sidebar-accent-foreground: 160 30% 15%; /* Dark Teal/Green */
+    --sidebar-border: 215 28% 27%; /* Main dark border color */
+    --sidebar-ring: 160 70% 60%; /* Dark mode accent for ring */
   }
 }
 
@@ -97,5 +98,6 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans);
   }
 }
